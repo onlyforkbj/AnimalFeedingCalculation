@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. UI", "1. UI", "{5229E366-2664-475F-BD4C-A5850DD94ED9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F3DFFE6-C5BD-4C25-AA48-13E54A6E6501}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Business", "2. Business", "{75C2B4F9-AAB8-44D7-82B3-579BC42C7569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Data", "3. Data", "{16E071B7-94D8-4EF9-8F20-907F87DDAFD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Test", "4. Test", "{ABF4F473-B587-4ADD-8187-7F78BFEDB367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFeedingCalculator.UnitTests", "test\AnimalFeedingCalculator.UnitTests\AnimalFeedingCalculator.UnitTests.csproj", "{57A10401-4BF0-40EB-931D-36C836BA5AB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Uploaded", "Uploaded", "{C17B5596-C772-4292-9472-80CEDE43DD43}"
+	ProjectSection(SolutionItems) = preProject
+		uploaded\animals.csv = uploaded\animals.csv
+		uploaded\Prices.txt = uploaded\Prices.txt
+		uploaded\zoo.xml = uploaded\zoo.xml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalFeedingCalculator.UI", "src\AnimalFeedingCalculator.UI\AnimalFeedingCalculator.UI.csproj", "{099D7369-DB37-448C-8E76-09C930955F13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFeedingCalculator.Data", "src\AnimalFeedingCalculator.Data\AnimalFeedingCalculator.Data.csproj", "{D89961E5-8EA0-469C-A97E-301C1AF8018F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFeedingCalculator.Business", "src\AnimalFeedingCalculator.Business\AnimalFeedingCalculator.Business.csproj", "{F31D1B63-D3B6-425B-B06C-F1CB1DBEEBAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57A10401-4BF0-40EB-931D-36C836BA5AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A10401-4BF0-40EB-931D-36C836BA5AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A10401-4BF0-40EB-931D-36C836BA5AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A10401-4BF0-40EB-931D-36C836BA5AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099D7369-DB37-448C-8E76-09C930955F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099D7369-DB37-448C-8E76-09C930955F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099D7369-DB37-448C-8E76-09C930955F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099D7369-DB37-448C-8E76-09C930955F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D89961E5-8EA0-469C-A97E-301C1AF8018F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89961E5-8EA0-469C-A97E-301C1AF8018F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89961E5-8EA0-469C-A97E-301C1AF8018F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89961E5-8EA0-469C-A97E-301C1AF8018F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31D1B63-D3B6-425B-B06C-F1CB1DBEEBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31D1B63-D3B6-425B-B06C-F1CB1DBEEBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31D1B63-D3B6-425B-B06C-F1CB1DBEEBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31D1B63-D3B6-425B-B06C-F1CB1DBEEBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57A10401-4BF0-40EB-931D-36C836BA5AB4} = {ABF4F473-B587-4ADD-8187-7F78BFEDB367}
+		{C17B5596-C772-4292-9472-80CEDE43DD43} = {2F3DFFE6-C5BD-4C25-AA48-13E54A6E6501}
+		{099D7369-DB37-448C-8E76-09C930955F13} = {5229E366-2664-475F-BD4C-A5850DD94ED9}
+		{D89961E5-8EA0-469C-A97E-301C1AF8018F} = {16E071B7-94D8-4EF9-8F20-907F87DDAFD8}
+		{F31D1B63-D3B6-425B-B06C-F1CB1DBEEBAC} = {75C2B4F9-AAB8-44D7-82B3-579BC42C7569}
+	EndGlobalSection
+EndGlobal

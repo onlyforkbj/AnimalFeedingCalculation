@@ -1,0 +1,52 @@
+﻿@model IEnumerable<AnimalFeedingCalculator.Data.Models.AnimalFeedingRate>
+@{
+    ViewData["Title"] = "Animal Details Uploader";
+}
+
+@if (Model == null)
+{
+    <h3>Please Upload the Animal Details csv file in order to Calculate the Food Consumption </h3>
+}
+else
+{
+    <h1>The Animal Details csv file is uploaded successfully!</h1>
+    <br />
+
+    <table class="table table-bordered table-responsive table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Animal)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Food)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MeatPercentage)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var feedingRate in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => feedingRate.Animal)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => feedingRate.Rate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => feedingRate.Food)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => feedingRate.MeatPercentage)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

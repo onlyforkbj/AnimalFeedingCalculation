@@ -1,0 +1,84 @@
+﻿@model IEnumerable<AnimalFeedingCalculator.Business.ViewModels.AnimalFoodConsumption>
+@{
+    ViewData["Title"] = "Food Consumption Per Day In Zoo";
+}
+
+@if (Model == null)
+{
+    <h3>Please Upload the Price, Zoo Animals and Feeding Details files first. </h3>
+    <br />
+}
+else
+{
+
+    <h1>The Food Consumption Per Day Per Animal in Zoo is as below</h1>
+    <br />
+
+    <table class="table table-bordered table-responsive table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.AnimalTypeName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.WeightInKgs)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FoodType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AnimalType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FoodRatio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MeatConsumptionPercentage)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FoodCostPerKg)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PricePerDayFoodConsumption)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => item.AnimalTypeName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.WeightInKgs)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.FoodType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.AnimalType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.FoodRatio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.MeatConsumptionPercentage)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.FoodCostPerKg)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.PricePerDayFoodConsumption)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

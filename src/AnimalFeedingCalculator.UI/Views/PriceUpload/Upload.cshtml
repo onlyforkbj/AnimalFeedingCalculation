@@ -1,0 +1,40 @@
+﻿@model IDictionary<string, string>
+@{
+    ViewData["Title"] = "Food Price Uploader";
+}
+
+@if (Model == null)
+{
+    <h3>Please Upload the Price Detail txt file in order to Calculate the Food Consumption </h3>
+}
+else
+{    <h1>The Food Price Text file is uploaded successfully!</h1>
+    <br />
+
+    <table class="table table-bordered table-responsive table-hover">
+        <thead>
+            <tr>
+                <th>
+                    Food Type
+                </th>
+                <th>
+                    Price Per Kg
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var foodItem in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => foodItem.Key)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => foodItem.Value)
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}

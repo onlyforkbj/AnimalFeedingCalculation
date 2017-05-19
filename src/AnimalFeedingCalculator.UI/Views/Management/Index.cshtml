@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Animal Feeding Calculator";
+}
+
+<h1>Manage Animal Feeding</h1>
+<br />
+
+<form method="post" asp-action="Upload" asp-controller="PriceUpload" enctype="multipart/form-data">
+    <h4>Upload the Food per Kg Price Details in txt format</h4>
+    <br />
+    <div>
+        <input type="file" name="files" multiple />
+        <br />
+        <input type="submit" value="Upload" />
+    </div>
+</form>
+
+<form method="post" asp-action="Upload" asp-controller="AnimalsUpload" enctype="multipart/form-data">
+
+    <h4>Upload the Food Consumption Details in csv format</h4>
+    <br />
+
+    <div>
+        <input type="file" name="files" multiple />
+        <br />
+        <input type="submit" value="Upload" />
+    </div>
+</form>
+<form method="post" asp-action="Upload" asp-controller="ZooUpload" enctype="multipart/form-data">
+
+    <h4>Upload the Zoo Animals List in xml format</h4>
+    <br />
+    <div>
+        <input type="file" name="files" multiple />
+        <br />
+        <input type="submit" value="Upload" />
+    </div>
+</form>
